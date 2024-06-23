@@ -3,7 +3,7 @@ import Menu from "components/atom/icons/menu"
 import * as S from './styled'
 import UserProfile from "components/atom/icons/userProfile"
 import FullScreen from "components/atom/icons/fullScreen"
-import { iconParam, menuLst, useIsActiveState } from "./utils"
+import { iconParam, loginMenuLst, menuLst, useIsActiveState } from "./utils"
 import NavMenuLst from "components/atom/layout/navMenuLst"
 
 export default function NavBar() { 
@@ -40,7 +40,14 @@ export default function NavBar() {
                                         )
                                     })
                                 }
-                            </S.LstArea>
+                                {
+                                    loginMenuLst.map((item)=>{
+                                        return(
+                                            <NavMenuLst menuTitle={item} />
+                                        )
+                                    })
+                                }
+                            </S.LstArea>                           
                         </S.NavMenuLstWraaper>
                     </S.NavContentsWrapper>
                 )

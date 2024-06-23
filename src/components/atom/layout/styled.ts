@@ -2,6 +2,7 @@ import styled from "@emotion/styled";
 
 export const Wrapper = styled.li`
     width: 100%;
+    list-style-type: none;
     &:hover{
         cursor: pointer;
         div > li{
@@ -25,9 +26,8 @@ export const NavMenuWrapper = styled.div`
     padding: 5px 10px;
     flex-shrink: 0;
 `
-export const MenuTitle = styled.div`
+export const MenuTitle = styled.span`
     color: #b3b3b3;
-    list-style-type: none;
     transition: all 0.5s linear;
     flex-shrink: 0;
 `

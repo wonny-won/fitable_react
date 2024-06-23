@@ -34,7 +34,7 @@ export const NavBarWrapper = styled.nav<NavMenu>`
     align-items: center;
     justify-content: space-between;
     transform:${(props)=>(props.isActive? 'translateX(0)' :'translateX(-70px)')};
-    transition: transform,width 0.2s linear 0s;
+    transition: transform,width 2s linear;
     z-index: 1;
 `
 
@@ -76,13 +76,16 @@ left: 10px;
 `
 
 export const NavMenuLstWraaper = styled.div<NavMenuLstWraaperProp>`
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: ${(props)=>(props.isActive? '220px':'0')};
     height: 100vh;
     background-color: #1A1814;
     transform:${(props)=>(props.isActive? 'translateX(0)' :'translateX(-220px)')};
-    transition: transform,width 0.2s linear 0s;
+    transition: all 0.3s linear 0s;
 `
-export const LstArea = styled.ul<NavMenuLstWraaperProp>`
+export const LstArea = styled.ul`
     margin: 0;
     padding-left: 10px;
     padding: 60px 10px;
