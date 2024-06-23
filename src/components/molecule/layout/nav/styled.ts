@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 import { ReactNode } from "react";
 
 /*********************************************************************
- * Props Types
+ * Style Props Types
  *********************************************************************/
 interface NavMenu {
     isActive: boolean;
