@@ -5,6 +5,14 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  @font-face {
+    font-family: 'Freesentation-9Black';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-9Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    color:'#fff'
+  }
+  background-color: rgb(61,61,61);
 }
 
 code {
