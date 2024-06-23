@@ -1,11 +1,11 @@
-import RoutesCompoents from "commons/Routes/RoutesComp";
+import RoutesCompoents from "commons/component/Routes/RoutesComp";
 import LayoutPage from "components/molecule/layout/layoutPage";
 
 function App() {
   return (
    <>
    <LayoutPage>
-    <RoutesCompoents />
+      <RoutesCompoents />
    </LayoutPage>
    </>
   );
