@@ -4,8 +4,6 @@ import * as S from './styled'
 import UserProfile from "components/atom/icons/userProfile"
 import FullScreen from "components/atom/icons/fullScreen"
 import { iconParam, menuLst, useIsActiveState } from "./utils"
-import TextField from "components/atom/textField/textField"
-import { InputTitle } from "components/atom/textField/styled"
 import NavMenuLst from "components/atom/layout/navMenuLst"
 
 export default function NavBar() { 
