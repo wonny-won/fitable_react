@@ -28,7 +28,6 @@ export const NavMenuWrapper = styled.div`
 `
 export const MenuTitle = styled.span`
     color: #b3b3b3;
-    transition: all 0.5s linear;
     flex-shrink: 0;
 `
 export const HoverUnderLine = styled.hr`    

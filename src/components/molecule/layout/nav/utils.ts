@@ -1,7 +1,7 @@
 import { useState } from "react"
 
 /*******************************************************************
- * Page Icon/Btn Style Props
+ * Icon/Btn Style Props
  *******************************************************************/
 export const iconParam = {
     menu:{
@@ -27,14 +27,10 @@ export const iconParam = {
     }
 }
 
-export const ButtonActive = {
-    menu: false,
-    fullScreen: true
-}
 
 /*******************************************************************
- * Page variation
- *******************************************************************/
+ * Variation
+*******************************************************************/
 export const menuLst = [
     {
         title:'HOME',
@@ -45,11 +41,27 @@ export const menuLst = [
         subLst: ['Resume','Portfolio']
     },
 ]
+
 export const loginMenuLst = ['Login','Join Us']
 
+export const ButtonActive = {
+    menu: false,
+    fullScreen: true
+}
+
 /*******************************************************************
- * Page Functions
+ * Functions
  *******************************************************************/
+/**
+ * 각 버튼 활성 여부 fn
+ * @returns isActive: 활성 여부 , onClickChangeIsActive: setState fn
+ * 
+ * ButtonActive 내부의 key값으로 각자 버튼 동작 분리
+ */
+interface SetStateParam {
+    menu: boolean;
+    fullScreen: boolean;
+}
 export const useIsActiveState = ()=>{
     const [isActive,setIsActive] = useState(ButtonActive)
     const onClickChangeIsActive = (activeParam:'menu' | 'fullScreen')=>{setIsActive({...isActive,[activeParam]:!isActive[activeParam]})}

@@ -34,7 +34,7 @@ export const NavBarWrapper = styled.nav<NavMenu>`
     align-items: center;
     justify-content: space-between;
     transform:${(props)=>(props.isActive? 'translateX(0)' :'translateX(-70px)')};
-    transition: transform,width 2s linear;
+    transition: transform,width 0.1s linear;
     z-index: 1;
 `
 
@@ -61,18 +61,18 @@ export const MeunBtn = styled.button<MeunBtnProp>`
 `
 
 export const FloatFullScreenBtn = styled.button<MeunBtnProp>`
-width: 64px;
-height: 64px;
-border-radius: 50%;
-background-color: ${(props) => (props.isActive ? '#1A1814' : '#292929')};
-position: fixed;
-bottom: 10px;
-left: 10px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: ${(props) => (props.isActive ? '#1A1814' : '#292929')};
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
 
-&:hover{
-        background-color: #1A1814;
-        cursor: pointer;
-    }
+    &:hover{
+            background-color: #1A1814;
+            cursor: pointer;
+        }
 `
 
 export const NavMenuLstWraaper = styled.div<NavMenuLstWraaperProp>`
@@ -83,7 +83,7 @@ export const NavMenuLstWraaper = styled.div<NavMenuLstWraaperProp>`
     height: 100vh;
     background-color: #1A1814;
     transform:${(props)=>(props.isActive? 'translateX(0)' :'translateX(-220px)')};
-    transition: all 0.3s linear 0s;
+    transition: all 0.1s linear 0s;
 `
 export const LstArea = styled.ul`
     margin: 0;
