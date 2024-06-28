@@ -12,11 +12,18 @@ export default function NavBar() {
     return(
         <>
             { isActive.fullScreen ? 
+                //--- nav bar 숨김 (fullscreen o)
+                (
+                    <S.FloatFullScreenBtn isActive={isActive.fullScreen} onClick={()=>{onClickChangeIsActive('fullScreen')}} >
+                        <FullScreen {...iconParam.fullScreen}/>
+                    </S.FloatFullScreenBtn>
+                )
+                :
                 //--- nav bar 노출 (fullscreen x)
                 (
                     //-- nav bar area
                     <S.NavContentsWrapper>
-                        <S.NavBarWrapper isActive={isActive.fullScreen}>
+                        <S.NavBarWrapper isActive={!isActive.fullScreen}>
                             <div>
                                 <S.UserProfileArea>
                                     <UserProfile {...iconParam.userProfile}/> 
@@ -50,13 +57,6 @@ export default function NavBar() {
                             </S.LstArea>                           
                         </S.NavMenuLstWraaper>
                     </S.NavContentsWrapper>
-                )
-                :
-                //--- nav bar 숨김 (fullscreen o)
-                (
-                    <S.FloatFullScreenBtn isActive={isActive.fullScreen} onClick={()=>{onClickChangeIsActive('fullScreen')}} >
-                        <FullScreen {...iconParam.fullScreen}/>
-                    </S.FloatFullScreenBtn>
                 )
             }
         </>

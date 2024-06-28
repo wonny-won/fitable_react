@@ -9,9 +9,9 @@ export default function LayoutPage(props:PageComp){
     return(
         <body style={{display:'flex'}}>
             <NavBar />
-            <div style={{width:'100%',height:'100vh',padding:'0px 4px',overflow:'auto'}}>
+            <div style={{width:'100%',height:'100vh',overflow:'auto'}}>
                 <Banner />
-                <main>
+                <main style={{padding:'0px 4px'}}>
                     {props?.children}
                 </main>
             </div>

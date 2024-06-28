@@ -58,10 +58,6 @@ export const ButtonActive = {
  * 
  * ButtonActive 내부의 key값으로 각자 버튼 동작 분리
  */
-interface SetStateParam {
-    menu: boolean;
-    fullScreen: boolean;
-}
 export const useIsActiveState = ()=>{
     const [isActive,setIsActive] = useState(ButtonActive)
     const onClickChangeIsActive = (activeParam:'menu' | 'fullScreen')=>{setIsActive({...isActive,[activeParam]:!isActive[activeParam]})}

@@ -23,6 +23,7 @@ interface NavMenuLstWraaperProp {
 export const NavContentsWrapper = styled.div`
     height: 100vh;
     display: flex;
+    z-index: 10;
 `
 
 export const NavBarWrapper = styled.nav<NavMenu>`
@@ -35,7 +36,6 @@ export const NavBarWrapper = styled.nav<NavMenu>`
     justify-content: space-between;
     transform:${(props)=>(props.isActive? 'translateX(0)' :'translateX(-70px)')};
     transition: transform,width 0.1s linear;
-    z-index: 1;
 `
 
 export const UserProfileArea = styled.div`
@@ -68,6 +68,7 @@ export const FloatFullScreenBtn = styled.button<MeunBtnProp>`
     position: fixed;
     bottom: 10px;
     left: 10px;
+    z-index: 20;
 
     &:hover{
             background-color: #1A1814;
@@ -82,7 +83,7 @@ export const NavMenuLstWraaper = styled.div<NavMenuLstWraaperProp>`
     width: ${(props)=>(props.isActive? '220px':'0')};
     height: 100vh;
     background-color: #1A1814;
-    transform:${(props)=>(props.isActive? 'translateX(0)' :'translateX(-220px)')};
+    transform:${(props)=>(props.isActive? 'translateX(0)' :'translateX(-280px)')};
     transition: all 0.1s linear 0s;
 `
 export const LstArea = styled.ul`
