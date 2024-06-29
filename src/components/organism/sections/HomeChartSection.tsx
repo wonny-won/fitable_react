@@ -5,6 +5,7 @@ import * as S from './styled'
 export default function HomeCahrtSection(){
     const styleParam = {
         flexDirec:'column',
+        padding: ''
     }
 
     return(

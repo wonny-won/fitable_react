@@ -12,17 +12,18 @@ export const option = {
     },
     series: [
       {
-        name: 'Access From',
+        name: '언어별 접수량',
         type: 'pie',
         radius: '55%',
         center: ['50%', '45%'],
         data: [
-          { value: 335, name: 'Direct' },
-          { value: 310, name: 'Email' },
-          { value: 274, name: 'Union Ads' },
-          { value: 235, name: 'Video Ads' },
-          { value: 400, name: 'Search Engine' }
+          { value: 535, name: 'Python' },
+          { value: 410, name: 'Jvav' },
+          { value: 374, name: 'Java Script' },
+          { value: 335, name: 'Flutter' },
+          { value: 500, name: 'Kotlin' }
         ].sort(function (a, b) {
+          // 크기별 정렬
           return a.value - b.value;
         }),
         roseType: 'radius',

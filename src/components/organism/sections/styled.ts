@@ -25,7 +25,7 @@ export const SectionWrapper = styled.section<FelxDirection>`
 export const H1 = styled.h1<ColorProp>`
     color: ${(props)=>(props.color? props.color : '#b3b3b3')};
     font-size: 40px;
-    margin-top: 0;
+    margin: 20px 0 0 0;
 `
 
 export const StrongH1 = styled.h1<ColorProp>`
@@ -37,7 +37,7 @@ export const StrongH1 = styled.h1<ColorProp>`
 export const H3 = styled.h3`
     color: #b3b3b3;
     font-size: 25px;
-    margin: 10px 0;
+    margin: 0 0 20px 0;
     padding: 5px 20px;
 `
 
@@ -74,5 +74,6 @@ export const TextWrap = styled.div`
     justify-content: center;
     align-items: center;
     position: absolute ;
-    top: 300px;
+    top: 50px;
+    right: 20%;
 `

@@ -1,3 +1,5 @@
+const today = new Date()
+
 export const option = {
     tooltip: {
       trigger: 'axis',
@@ -18,24 +20,36 @@ export const option = {
     },
     yAxis: {
       type: 'category',
-      data: ['Brazil', 'Indonesia', 'USA', 'India', 'China', 'World']
+      data: ['Java Script', 'Jvav', 'Flutter', 'Python', 'Kotlin']
     },
     series: [
       {
-        name: '2011',
+        name: '이력서 피드백',
         type: 'bar',
         itemStyle:{
             color:'#147AF3'
         },
-        data: [18203, 23489, 29034, 104970, 131744, 630230]
+        data: [
+          100,
+          20,
+          24,
+          40,
+          120,
+        ]
       },
       {
-        name: '2012',
+        name: '포트폴리오 피드백',
         type: 'bar',
         itemStyle:{
             color: '#c23531'
         },
-        data: [19325, 23438, 31000, 121594, 134141, 681807]
+        data: [
+          435,
+          390,
+          350,
+          290,
+          380,
+        ]
       }
     ]
   };
