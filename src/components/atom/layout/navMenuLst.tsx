@@ -3,7 +3,7 @@ import * as S from './styled'
 import ArrowRight from "../icons/arowRight";
 
 export default function NavMenuLst (props:NavMenuLstProp) {
-    const {menuTitle} = props
+    const {menuTitle,link} = props
     const iconParam ={
         color:'#b3b3b3',
         width: '18px'
@@ -11,7 +11,7 @@ export default function NavMenuLst (props:NavMenuLstProp) {
      
     return (
         <S.Wrapper>
-            <S.LinkWrap href ={menuTitle==='HOME'? '/home':'/program'}>
+            <S.LinkWrap href ={link}>
                 <S.NavMenuWrapper>
                     <S.MenuTitle>{menuTitle}</S.MenuTitle>
                     <ArrowRight {...iconParam}/>

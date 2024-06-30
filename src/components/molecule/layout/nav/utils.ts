@@ -1,3 +1,4 @@
+import { link } from "fs"
 import { useState } from "react"
 
 /*******************************************************************
@@ -34,15 +35,25 @@ export const iconParam = {
 export const menuLst = [
     {
         title:'HOME',
+        link: '/',
         subLst: []
     },
     {
         title:'FEEDBACK PROGRAM',
+        link:'/program',
         subLst: ['Resume','Portfolio']
     },
+    {
+        title:'Login',
+        link: '/login',
+        subLst: []
+    },
+    {
+        title:'Join Us',
+        link: '/joinus',
+        subLst: []
+    }
 ]
-
-export const loginMenuLst = ['Login','Join Us']
 
 export const ButtonActive = {
     menu: false,

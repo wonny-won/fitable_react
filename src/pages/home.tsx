@@ -1,11 +1,11 @@
-import HomeCahrtSection from "components/organism/sections/HomeChartSection";
-import HomeReviewSection from "components/organism/sections/HomeReviewSetction";
-import HomeIntro from "components/organism/sections/HomeIntro";
+import HomeCahrtSection from "components/organism/sections/home/HomeChartSection";
+import HomeReviewSection from "components/organism/sections/home/HomeReviewSetction";
+import HomeIntroSection from "components/organism/sections/home/HomeIntroSection";
 
 export default function Home (){
     return(
         <>
-            <HomeIntro/>
+            <HomeIntroSection/>
             <HomeCahrtSection/>
             <HomeReviewSection/>
         </>
