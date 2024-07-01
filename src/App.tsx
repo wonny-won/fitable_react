@@ -1,5 +1,6 @@
-import RoutesCompoents from "components/Routes/RoutesComp";
-import LayoutPage from "components/molecule/layout/layoutPage";
+import RoutesCompoents from "Routes";
+import LayoutPage from "components/templates/layoutPage";
+
 
 function App() {
   return (

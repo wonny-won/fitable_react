@@ -1,8 +1,11 @@
 /********************************************************************
  * apply program : mento list
  ********************************************************************/
-export const mentoLst:{[Portfolio:string]:any[];Resume:any[]} = {
-        Portfolio:[
+export const mentoLst:{
+    [portfolio:string]:any[];
+    resume:any[]
+} = {
+        portfolio:[
             {
                 id: 1,
                 name:'홍구리',
@@ -136,5 +139,5 @@ export const mentoLst:{[Portfolio:string]:any[];Resume:any[]} = {
                 tag:['이직 준비','취업 준비','서류 합격','면접 대비','코드의 방향성']
             }
         ],
-        Resume:[]
+        resume:[]
     }

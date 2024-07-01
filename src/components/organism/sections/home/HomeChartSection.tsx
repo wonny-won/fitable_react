@@ -1,7 +1,7 @@
 import styled from '@emotion/styled'
 import BarWidget from '../../infoWidget/barwidget'
 import PieWidget from '../../infoWidget/PieWidget'
-import * as S from '../commonStyled'
+import * as CS from '../../../commonStyle'
 
 export default function HomeCahrtSection(){
     const styleParam = {
@@ -11,14 +11,14 @@ export default function HomeCahrtSection(){
     }
 
     return(
-        <S.SectionWrapper style={styleParam}>
-            <S.H3>지금 이순간에도,</S.H3>
-            <S.H3><S.StrongH3>당신의 경쟁자들은 노력</S.StrongH3>합니다.</S.H3>
+        <CS.SectionWrapper style={styleParam}>
+            <CS.H3>지금 이순간에도,</CS.H3>
+            <CS.H3><CS.StrongH3>당신의 경쟁자들은 노력</CS.StrongH3>합니다.</CS.H3>
             <ChartAreat>
                 <BarWidget />
                 <PieWidget />
             </ChartAreat>
-        </S.SectionWrapper>
+        </CS.SectionWrapper>
     )
 }
 

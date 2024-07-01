@@ -1,3 +1,4 @@
+import { NavigateFunction, useNavigate } from 'react-router-dom';
 import * as S from './styled'
 
 interface DataProp {
@@ -12,13 +13,16 @@ interface DataProp {
         appealDescription:string;
         tag:string[];
     },
+    onClickHandler?:NavigateFunction;
 }
 
 export default function Card(props:DataProp){
     const {data} = props
+    const navigate = useNavigate()
+    
     return(
         <>
-            <S.CardWrap>
+            <S.CardWrap onClick={()=>{navigate(`/program/:${data.id}`)}}>
                 <S.MainInfo>
                     <S.Image></S.Image>
                     <S.MentoInfo>

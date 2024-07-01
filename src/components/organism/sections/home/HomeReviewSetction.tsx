@@ -1,4 +1,4 @@
-import * as S from '../commonStyled'
+import * as CS from '../../../commonStyle'
 
 export default function HomeReviewSection (){
     const styleParam = {
@@ -7,13 +7,13 @@ export default function HomeReviewSection (){
     }
 
     return (
-        <S.SectionWrapper style={styleParam}>
+        <CS.SectionWrapper style={styleParam}>
                 <img width={'300'} height={'400'} src='/assets/idCard.svg'/>
                 <div>
-                    <S.StrongH3>피터블로</S.StrongH3>
-                    <S.H3>나에게 <S.StrongH3>fit</S.StrongH3>한 피드백,</S.H3>
-                    <S.H3>후기가 증명합니다.</S.H3>
+                    <CS.StrongH3>피터블로</CS.StrongH3>
+                    <CS.H3>나에게 <CS.StrongH3>fit</CS.StrongH3>한 피드백,</CS.H3>
+                    <CS.H3>후기가 증명합니다.</CS.H3>
                 </div>
-        </S.SectionWrapper>
+        </CS.SectionWrapper>
     )
 }

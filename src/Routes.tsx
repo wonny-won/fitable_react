@@ -1,6 +1,7 @@
 import { Route,Routes } from "react-router-dom"
-import Home from "pages/home"
-import FeedBackProgramApply from "pages/feedBackProgramApply"
+import Home from "components/views/home"
+import FeedBackProgramApply from "components/views/apply/feedBackProgramApply"
+import ApplyMento from "components/views/apply/applyMento"
 
 export default function RoutesCompoents(){
     return (
@@ -8,6 +9,7 @@ export default function RoutesCompoents(){
           <Routes>
             <Route path="/" element={<Home/>} />
             <Route path="/program" element={<FeedBackProgramApply/>} />
+            <Route path='/program/:id' element={<ApplyMento />} />
           </Routes>
         </>
     )

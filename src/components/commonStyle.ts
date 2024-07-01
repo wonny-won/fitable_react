@@ -1,4 +1,12 @@
-import styled from "@emotion/styled";
+import styled from "@emotion/styled"
+
+interface H1Prop {
+    style?:{
+        color?: string;
+        padding?: string;
+        fontSize?: string;
+    }
+}
 
 interface SectionStyleProp {
     style?: {
@@ -9,16 +17,10 @@ interface SectionStyleProp {
         align?:string;
     }
 }
-interface H1Prop {
-    style?:{
-        color?: string;
-        padding?: string;
-        fontSize?: string;
-    }
-}
 
-//-------------------------------[ all section common style ]-------------------------------
-
+//-----------------------------------------------------------------------------------
+// Text
+//-----------------------------------------------------------------------------------
 export const SectionWrapper = styled.section<SectionStyleProp>`
     background-color: #1A1814 ;
     display: flex;
@@ -31,6 +33,7 @@ export const SectionWrapper = styled.section<SectionStyleProp>`
     height: ${(props)=> props.style?.height && props.style?.height};
     overflow: hidden;
 `
+
 export const H1 = styled.h1<H1Prop>`
     color: ${(props)=>(props.style?.color? props.style?.color : '#b3b3b3')};
     font-size: ${(props)=>(props.style?.fontSize? props.style?.fontSize : '40px')};
