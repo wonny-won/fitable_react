@@ -41,9 +41,9 @@ export default function NavBar() {
                         <S.NavMenuLstWraaper isActive={isActive.menu}>
                             <S.LstArea>
                                 {
-                                    menuLst.map((item)=>{
+                                    menuLst.map((item,idx)=>{
                                         return(
-                                            <NavMenuLst menuTitle={item.title} link={item.link}/>
+                                            <NavMenuLst key={idx} menuTitle={item.title} link={item.link}/>
                                         )
                                     })
                                 }

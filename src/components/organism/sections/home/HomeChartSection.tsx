@@ -6,7 +6,8 @@ import * as S from '../commonStyled'
 export default function HomeCahrtSection(){
     const styleParam = {
         flexDirec:'column',
-        padding: ''
+        padding: '',
+        justify: 'space-between'
     }
 
     return(

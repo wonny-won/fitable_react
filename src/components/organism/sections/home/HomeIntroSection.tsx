@@ -20,7 +20,7 @@ export default function HomeIntroSection(){
 //---------------------------------------------------------------------
 export const BgSectionWrap = styled.section`
     height: calc(100vh - 64px);
-    background-image: url('/homeIntro.jpg');
+    background-image: url('/assets/homeIntro.jpg');
     background-size: cover;
     background-position:32%;
     display: flex;

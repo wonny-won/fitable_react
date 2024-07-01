@@ -3,9 +3,10 @@ import styled from "@emotion/styled";
 interface SectionStyleProp {
     style?: {
         flexDirec?: string;
-        justify?: string;
         padding?: string;
         height?:string;
+        justify?:string;
+        align?:string;
     }
 }
 interface H1Prop {
@@ -21,12 +22,14 @@ interface H1Prop {
 export const SectionWrapper = styled.section<SectionStyleProp>`
     background-color: #1A1814 ;
     display: flex;
-    flex-direction: ${(props)=> props.style?.flexDirec? props.style?.flexDirec : 'row'};
-    justify-content: space-between;
-    padding: ${(props)=> props.style?.padding? props.style?.padding : '10px 4px'};
+    flex-direction: ${(props)=> props.style?.flexDirec ? props.style?.flexDirec : 'row'};
+    justify-content: ${(props)=> props.style?.justify && props.style?.justify};
+    padding: ${(props)=> props.style?.padding ? props.style?.padding : '10px 4px'};
+    align-items: ${(props)=> props.style?.align && props.style?.align};;
     margin: 4px 0px;
     color: #b3b3b3;
-    height: ${(props)=> props.style?.height? props.style?.height : ''};
+    height: ${(props)=> props.style?.height && props.style?.height};
+    overflow: hidden;
 `
 export const H1 = styled.h1<H1Prop>`
     color: ${(props)=>(props.style?.color? props.style?.color : '#b3b3b3')};

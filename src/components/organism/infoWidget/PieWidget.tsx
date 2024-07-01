@@ -1,4 +1,4 @@
-import PieChart from "components/molecule/charts/pie/pieChart";
+import PieChart from "components/atom/charts/pie/pieChart";
 import WidgetFrame from "components/molecule/widget/widgetFrame";
 
 export default function BarWidget(){

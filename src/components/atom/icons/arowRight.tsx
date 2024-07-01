@@ -6,7 +6,7 @@ export default function ArrowRight(props:IconProp){
     return(
         <>
             <IconCommonSvg width={width?width:"24"} height={height?height:"24"} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_1127_516)">
+                <g clipPath="url(#clip0_1127_516)">
                     <path d="M10.0001 6L8.59009 7.41L13.1701 12L8.59009 16.59L10.0001 18L16.0001 12L10.0001 6Z" fill={color?color:"black"}/>
                 </g>
                 <defs>

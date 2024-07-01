@@ -1,4 +1,3 @@
-import { PropsWithChildren, ReactElement, ReactNode } from 'react'
 import * as S from './styled'
 
 type SlotComp = {

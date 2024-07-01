@@ -2,12 +2,13 @@ import * as S from '../commonStyled'
 
 export default function HomeReviewSection (){
     const styleParam = {
-        padding: '30px'
+        padding: '30px',
+        justify: 'space-between'
     }
 
     return (
         <S.SectionWrapper style={styleParam}>
-                <img width={'300'} height={'400'} src='/idCard.svg'/>
+                <img width={'300'} height={'400'} src='/assets/idCard.svg'/>
                 <div>
                     <S.StrongH3>피터블로</S.StrongH3>
                     <S.H3>나에게 <S.StrongH3>fit</S.StrongH3>한 피드백,</S.H3>
