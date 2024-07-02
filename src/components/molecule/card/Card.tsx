@@ -1,5 +1,6 @@
 import { NavigateFunction, useNavigate } from 'react-router-dom';
 import * as S from './styled'
+import Tag from 'components/atom/tag/tag';
 
 interface DataProp {
     data:{
@@ -39,7 +40,7 @@ export default function Card(props:DataProp){
                     <S.TagWrap>
                         {
                             data.tag.map((item,idx)=>(
-                                <S.Tag key={idx}>{item}</S.Tag>
+                                <Tag key={idx} data={item}/>
                             ))
                         }
                     </S.TagWrap>
