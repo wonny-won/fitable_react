@@ -10,8 +10,6 @@ export default function ProgramMento(){
    
 
     return (
-        <>
-            <SimpleMentoInfoSection data={data}/>
-        </>
+        <SimpleMentoInfoSection data={data}/>
     )
 }
