@@ -5,7 +5,7 @@ import { mentoLst } from 'commons/utils/mockData'
 import { H1Style, SectionStyle, logoImgArr, useProgramChangeHandler, titleArr } from './utils'
 // import { useRouting } from 'commons/utils/routing'
 
-export default function PortfolioSection(){
+export default function FeedbackSection(){
     const {program,onChangeProgram} = useProgramChangeHandler()
 
     return(
@@ -18,6 +18,7 @@ export default function PortfolioSection(){
                     ))}
                 </AL.LogoWrap>
             </AL.ApplyBanner>
+
             <AL.ProgramTitleWrap>
                 {
                     titleArr.map((item,idx)=>(
@@ -31,6 +32,7 @@ export default function PortfolioSection(){
                     ))
                 }
             </AL.ProgramTitleWrap>
+            
             <AL.CardSection>
                 {
                     mentoLst[program].map((item,idx)=>(

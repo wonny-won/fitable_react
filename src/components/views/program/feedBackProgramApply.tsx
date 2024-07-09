@@ -1,7 +1,7 @@
-import PortfolioSection from "components/organism/sections/feedbackProgram/PortfolioSection";
+import FeedbackSection from "components/organism/sections/feedbackProgram/feedbackSection";
 
 export default function FeedBackProgramApply (){
     return(
-        <PortfolioSection/>
+        <FeedbackSection/>
     )
 }

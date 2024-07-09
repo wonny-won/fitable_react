@@ -13,7 +13,7 @@ export default function Button (props:ButtonProp) {
     const {text,style,isuseIcon,iconComp,onClickHandler} = props
     
     return(
-        <S.Button style={{...style}} onClick={onClickHandler}>
+        <S.Button style={style} onClick={onClickHandler}>
             {isuseIcon ? iconComp : (text? text : '확인')}
         </S.Button>
     )

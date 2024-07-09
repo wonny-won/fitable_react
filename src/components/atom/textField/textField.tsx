@@ -1,11 +1,15 @@
-import { TextFieldProp } from "./types";
 import * as S from './styled'
 
+interface TextFieldProp {
+    inputTitle: string;
+    style?:{}
+}
+
 export default function TextField (props:TextFieldProp){
-    const {inputTitle,inputColor,width,height} = props
+    const {inputTitle,style} = props
     return(
         <>
-            <S.TextFieldWrapper style={{width: width ? width : '100%', height: height ? height : '100%'}}>
+            <S.TextFieldWrapper style={style}>
                 <S.InputTitle>{inputTitle}</S.InputTitle>
                 <S.Input/>
             </S.TextFieldWrapper>

@@ -1,6 +1,10 @@
-import { NavMenuLstProp } from "./types";
 import * as S from './styled'
 import ArrowRight from "../icons/arowRight";
+
+interface NavMenuLstProp {
+    menuTitle: string;
+    link:string
+}
 
 export default function NavMenuLst (props:NavMenuLstProp) {
     const {menuTitle,link} = props

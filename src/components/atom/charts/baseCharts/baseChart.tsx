@@ -34,6 +34,6 @@ export default function BaseChart(props:any){
     },[])
 
     return(
-            <div id={props.title} style={{width:'95%',height:'250px'}}/>
+        <div id={props.title} style={{width:'95%',height:'250px'}}/>
     )
 }
