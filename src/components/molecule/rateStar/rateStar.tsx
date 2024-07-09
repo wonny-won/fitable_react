@@ -9,10 +9,14 @@ export default function (props: {rate?:number}){
         }
     }
 
+    const startIconProps = {
+        isFill: 0,
+        style:{ width:'20px', height:'18px' }
+    }
     return(
         <>
             {
-                rateArr.map((i)=>(<Star isFill={i}/>))
+                rateArr.map((i)=>(<Star {...{...startIconProps,isFill:i}}/>))
             }
         </>
     )

@@ -28,7 +28,7 @@ export default function ReviewCard (props:PropTyps) {
                         <RateStar rate={data?.star}/>
                     </S.StartWrap>
                 </S.ReviewSynthesis>
-                <div>{data?.desc}</div>
+                <S.DescWrap>{data?.desc}</S.DescWrap>
             </S.ReviewCardWrap>
         </>
     )

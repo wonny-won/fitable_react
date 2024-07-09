@@ -29,5 +29,10 @@ export const ReviewerName = styled.div`
 `
 
 export const StartWrap = styled.div`
-    padding: 0 25px;
+    padding: 0 15px;
+`
+
+export const DescWrap = styled.div`
+    padding: 20px 10px;
+    font-size: 14px;
 `
