@@ -198,7 +198,7 @@ export const mentoInfo:any = {
                 id:13,
                 program: '포트폴리오 피드백',
                 name:'냐옹이',
-                star:5,
+                star:4,
                 desc:'이거슨 개쩌는 피드백..!'
             },
             {
