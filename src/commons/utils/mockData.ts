@@ -196,19 +196,22 @@ export const mentoInfo:any = {
         review:[
             {
                 id:13,
+                program: '포트폴리오 피드백',
                 name:'냐옹이',
                 star:5,
                 desc:'이거슨 개쩌는 피드백..!'
             },
             {
                 id:14,
-                name:'',
+                program: '이력서 피드백',
+                name:'닭다리',
                 star:5,
                 desc:''
             },
             {
                 id:15,
-                name:'',
+                program: '포트폴리오 피드백',
+                name:'부두닭',
                 star:5,
                 desc:''
             },
@@ -264,19 +267,22 @@ export const mentoInfo:any = {
         review:[
             {
                 id:16,
-                name:'',
+                name:'eeerrr3',
+                program: '포트폴리오 피드백',
                 star:5,
                 desc:''
             },
             {
                 id:17,
-                name:'',
+                name:'hjk3',
+                program: '포트폴리오 피드백',
                 star:5,
                 desc:''
             },
             {
                 id:18,
-                name:'',
+                name:'123123',
+                program: '포트폴리오 피드백',
                 star:5,
                 desc:''
             },
@@ -332,19 +338,22 @@ export const mentoInfo:any = {
         review:[
             {
                 id:20,
-                name:'',
+                program: '이력서 피드백',
+                name:'ertert345',
                 star:5,
                 desc:''
             },
             {
                 id:21,
-                name:'',
+                program: '이력서 피드백',
+                name:'ghgh11',
                 star:5,
                 desc:''
             },
             {
                 id:22,
-                name:'',
+                program: '포트폴리오 피드백',
+                name:'fgfg',
                 star:5,
                 desc:''
             },
@@ -400,19 +409,22 @@ export const mentoInfo:any = {
         review:[
             {
                 id:23,
-                name:'',
+                name:'hghghee',
+                program: '포트폴리오 피드백',
                 star:5,
                 desc:''
             },
             {
                 id:24,
-                name:'',
+                program: '이력서 피드백',
+                name:'xcvxc',
                 star:5,
                 desc:''
             },
             {
                 id:25,
-                name:'',
+                program: '포트폴리오 피드백',
+                name:'asagh',
                 star:5,
                 desc:''
             },
@@ -468,19 +480,22 @@ export const mentoInfo:any = {
         review:[
             {
                 id:26,
-                name:'',
+                program: '포트폴리오 피드백',
+                name:'vcbcb',
                 star:5,
                 desc:''
             },
             {
                 id:27,
-                name:'',
+                program: '포트폴리오 피드백',
+                name:'sdfs',
                 star:5,
                 desc:''
             },
             {
                 id:28,
-                name:'',
+                program: '포트폴리오 피드백',
+                name:'123sad',
                 star:5,
                 desc:''
             },
@@ -536,19 +551,22 @@ export const mentoInfo:any = {
         review:[
             {
                 id: 29,
-                name:'',
+                program: '이력서 피드백',
+                name:'vbvb',
                 star:5,
                 desc:''
             },
             {
                 id:30,
-                name:'',
+                program: '이력서 피드백',
+                name:'sdfsd',
                 star:5,
                 desc:''
             },
             {
                 id:31,
-                name:'',
+                program: '이력서 피드백',
+                name:'eeee',
                 star:5,
                 desc:''
             },
@@ -604,19 +622,22 @@ export const mentoInfo:any = {
         review:[
             {
                 id: 32,
-                name:'',
+                program: '이력서 피드백',
+                name:'fgh',
                 star:5,
                 desc:''
             },
             {
                 id:33,
-                name:'',
+                program: '이력서 피드백',
+                name:'rty',
                 star:5,
                 desc:''
             },
             {
                 id:34,
-                name:'',
+                program: '포트폴리오 피드백',
+                name:'yui',
                 star:5,
                 desc:''
             },
@@ -672,19 +693,22 @@ export const mentoInfo:any = {
         review:[
             {
                 id:35,
-                name:'',
+                name:'cvb',
+                program: '포트폴리오 피드백',
                 star:5,
                 desc:''
             },
             {
                 id:36,
-                name:'',
+                name:'dfdf',
+                program: '포트폴리오 피드백',
                 star:5,
                 desc:''
             },
             {
                 id:37,
-                name:'',
+                name:'asas',
+                program: '이력서 피드백',
                 star:5,
                 desc:''
             },
@@ -740,19 +764,22 @@ export const mentoInfo:any = {
         review:[
             {
                 id:38,
-                name:'',
+                program: '이력서 피드백',
+                name:'jjj',
                 star:5,
                 desc:''
             },
             {
                 id:39,
-                name:'',
+                program: '포트폴리오 피드백',
+                name:'qwe',
                 star:5,
                 desc:''
             },
             {
                 id:40,
-                name:'',
+                program: '이력서 피드백',
+                name:'fffd',
                 star:5,
                 desc:''
             },
@@ -808,21 +835,24 @@ export const mentoInfo:any = {
         review:[
             {
                 id:41,
-                name:'',
+                name:'wer',
+                program: '포트폴리오 피드백',
                 star:5,
                 desc:''
             },
             {
                 id:42,
-                name:'',
+                name:'hhgh',
+                program: '포트폴리오 피드백',
                 star:5,
                 desc:''
             },
             {
                 id:43,
-                name:'',
+                program: '이력서 피드백',
+                name:'dff',
                 star:5,
-                desc:''
+                desc:'cvb'
             },
         ],
     },
@@ -876,19 +906,22 @@ export const mentoInfo:any = {
         review:[
             {
                 id:44,
-                name:'',
+                program: '포트폴리오 피드백',
+                name:'ghfghfgh',
                 star:5,
                 desc:''
             },
             {
                 id:45,
-                name:'',
+                program: '포트폴리오 피드백',
+                name:'ert',
                 star:5,
                 desc:''
             },
             {
                 id:46,
-                name:'',
+                program: '이력서 피드백',
+                name:'sdf',
                 star:5,
                 desc:''
             },
@@ -944,19 +977,22 @@ export const mentoInfo:any = {
         review:[
             {
                 id: 47,
-                name:'',
+                program: '포트폴리오 피드백',
+                name:'dfdf',
                 star:5,
                 desc:''
             },
             {
                 id:48,
-                name:'',
+                program: '포트폴리오 피드백',
+                name:'qqw',
                 star:5,
                 desc:''
             },
             {
                 id:49,
-                name:'',
+                program: '포트폴리오 피드백',
+                name:'wwf',
                 star:5,
                 desc:''
             },

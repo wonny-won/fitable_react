@@ -15,6 +15,7 @@ interface SectionStyleProp {
         height?:string;
         justify?:string;
         align?:string;
+        overflow?:string;
     }
 }
 
@@ -24,6 +25,7 @@ interface SectionStyleProp {
 export const SectionWrapper = styled.section<SectionStyleProp>`
     background-color: #1A1814 ;
     display: flex;
+    flex-shrink: 0;
     flex-direction: ${(props)=> props.style?.flexDirec ? props.style?.flexDirec : 'row'};
     justify-content: ${(props)=> props.style?.justify && props.style?.justify};
     padding: ${(props)=> props.style?.padding ? props.style?.padding : '10px 4px'};
@@ -31,7 +33,7 @@ export const SectionWrapper = styled.section<SectionStyleProp>`
     margin: 4px 0px;
     color: #b3b3b3;
     height: ${(props)=> props.style?.height && props.style?.height};
-    overflow: hidden;
+    overflow: ${(props)=> props.style?.height ? props.style?.height : 'hidden'};
 `
 
 export const H1 = styled.h1<H1Prop>`

@@ -1,6 +1,7 @@
 import Button from 'components/atom/button/button';
 import * as S from './styled'
 import Save from 'components/atom/icons/save';
+import { useSaveMentoBtn } from './utils';
 
 interface PropType {
     data?:{
@@ -15,13 +16,17 @@ interface PropType {
 
 export default function SimpleMentoInfoSection (props:PropType) {
     const {data} = props
+    const { isSaveMento, onClickSaveMento } = useSaveMentoBtn()
+
+    //-- button comp props
     const buttonParam = {
         text: '피드백 신청하기',
     }
     const mentoSaveBtnParam = {
         isuseIcon: true,
-        iconComp: <Save style={{paddingTop:'3px'}}/>,
-        style: {backgroundColor:'transparent', border: '1.5px solid #fff', color: '#fff'}
+        iconComp: <Save/>,
+        styles: {backgroundColor:'transpraent', border: '1.5px solid #fff', color: '#FFF'},
+        onClickHandler: onClickSaveMento
     }
 
     return (
@@ -30,7 +35,7 @@ export default function SimpleMentoInfoSection (props:PropType) {
                     <S.MentoBasicInfo>
                         <S.Img></S.Img>
                         <div>
-                            <S.Name>{data?.name}</S.Name>
+                            <S.MainText>{data?.name}</S.MainText>
                             <S.Text1>{data?.company}</S.Text1>
                             <S.Text3>{data?.position} | {data?.employmentYear}</S.Text3>
                         </div>
