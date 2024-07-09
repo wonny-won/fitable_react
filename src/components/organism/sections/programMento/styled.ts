@@ -5,6 +5,8 @@ import styled from "@emotion/styled";
 ************************************************************************/
 interface StyleProp {
     padding?: string
+    color?:string;
+    margin?: string;
 }
 
 /************************************************************************/
@@ -55,9 +57,11 @@ export const Line = styled.hr`
     padding: ${(props)=>(props.padding && props.padding)};
  `
 
- export const Text1 = styled.div`
+ export const Text1 = styled.div<StyleProp>`
     font-size: 15px;
     font-weight: 700;
+    color: ${(props)=>(props.color && props.color)};
+    padding: ${(props)=>(props.padding && props.padding)};
  `
  export const Text2 = styled.div`
     font-size: 14px;
@@ -94,9 +98,12 @@ export const TagWrap = styled.div`
     padding: 10px 0px;
     display: flex;
 `
-export const TxtWrap = styled.div`
+export const ExplainWrap = styled.div`
+
+`
+export const TxtWrap = styled.div<StyleProp>`
     padding: 10px;
     background-color: #292929;
     border-radius: 5px;
-    margin: 15px 0px 10px 0px;
+    margin: ${(props)=>(props.margin? props.margin : '15px 0px 10px 0px')};
 `

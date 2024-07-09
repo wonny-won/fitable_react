@@ -23,7 +23,7 @@ export const ReviewSynthesis = styled.div`
 
 export const ReviewerName = styled.div`
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 800;
     color: #fff;
     padding: 0 10px;
 `

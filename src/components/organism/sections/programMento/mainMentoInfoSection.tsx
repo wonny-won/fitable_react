@@ -2,6 +2,7 @@ import Tag from 'components/atom/tag/tag';
 import * as S from '../../../commonStyle'
 import * as PS from './styled'
 import ReviewCard from 'components/molecule/Review/reviewCard';
+import { RecommandSection } from './utils';
 
 interface DataProp {
     data?:{
@@ -14,7 +15,7 @@ interface DataProp {
         notRecomandfor:string;
         benefit:string;
         review:{
-            id:number;
+            id: number;
             name:string;
             star:number,
             desc:string;
@@ -42,19 +43,29 @@ export default function MainMentoInfoSection(props:DataProp){
                     }
                 </PS.TagWrap>
 
+                <PS.TxtWrap {...{margin:'30px 0'}}>
+                    <PS.Text1 {...{color:'#fff',padding:'10px'}}> 이런걸 물어보시면 좋아요! </PS.Text1>
+                    <PS.NormalTxt {...{padding:'10px'}}> • 현재 실력을 파악하고 싶어요! </PS.NormalTxt>
+                    <PS.NormalTxt {...{padding:'10px'}}> • 무엇을 공부해야 좀 더 좋은 개발자가 될 수 있나요? </PS.NormalTxt>
+                    <PS.NormalTxt {...{padding:'10px'}}> • 포트폴리오의 강점과 고쳐져야 할 단점은 무었인가요? </PS.NormalTxt>
+                </PS.TxtWrap>    
+
+
                 <PS.Line/>
 
                 {/* 추천 / 비추천 대상 및 혜택 part mini section */}
-                <PS.MiniSectionTitle>이런분께 추천해요!</PS.MiniSectionTitle>
-                <PS.NormalTxt {...{padding:'15px 0px 10px 10px'}}> ✐ {data?.recommandfor} </PS.NormalTxt>
-                
-                <PS.MiniSectionTitle>이런분은 추천하지 않아요.</PS.MiniSectionTitle>
-                <PS.NormalTxt {...{padding:'15px 0px 10px 10px'}}> ✐ {data?.notRecomandfor} </PS.NormalTxt>
-                
-                <PS.MiniSectionTitle>이것만큼은 확실히 가져갈 수 있어요!</PS.MiniSectionTitle>
-                <PS.TxtWrap>
-                    <PS.NormalTxt> {data?.benefit} </PS.NormalTxt>
-                </PS.TxtWrap>
+                {
+                    RecommandSection.map((item:any,idx:any)=>{
+                        const dataType:'recommandfor' | 'notRecomandfor' |  'benefit' =  item.data
+                        return (
+                        <>
+                            <PS.MiniSectionTitle>{item.title}</PS.MiniSectionTitle>
+                            <PS.TxtWrap>
+                                <PS.NormalTxt {...{padding:'15px 0px 10px 10px'}}> ✐ {data?.[dataType]} </PS.NormalTxt>
+                            </PS.TxtWrap>    
+                        </>
+                    )})
+                }
 
                 <PS.Line/>
 
@@ -66,7 +77,6 @@ export default function MainMentoInfoSection(props:DataProp){
                     ))
                 }
             </PS.ContentsWrap>
-        
         </S.SectionWrapper>
     )
 }
