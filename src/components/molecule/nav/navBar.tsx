@@ -1,5 +1,4 @@
 import Menu from "components/atom/icons/menu"
-// import My from "components/atom/icons/my"
 import * as S from './styled'
 import UserProfile from "components/atom/icons/userProfile"
 import FullScreen from "components/atom/icons/fullScreen"

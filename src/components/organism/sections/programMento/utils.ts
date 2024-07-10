@@ -34,12 +34,22 @@ export const RecommandSection:RecommandSectionType[] = [
  * onClickSaveMento(fn) : 멘토 찜 핸들러 함수
  */
 export const useSaveMentoBtn = ()=>{
-    const [isSaveMento,setSaveMento] = useState(false);
+    const [pageState, setPageState] = useState({
+        isSaveMento: false,
+        isOpenApplyPopup: false
+    })
+
+    //-- state handler
     const onClickSaveMento = ()=>{
-        setSaveMento(!isSaveMento)
+        setPageState({...pageState,isSaveMento:!pageState.isSaveMento})
     }
+    const onClickOpenApplyPopup = ()=>{
+        setPageState({...pageState,isOpenApplyPopup:!pageState.isOpenApplyPopup})
+    }
+
     return {
-        isSaveMento,
-        onClickSaveMento
+        pageState,
+        onClickSaveMento,
+        onClickOpenApplyPopup
     }
 }

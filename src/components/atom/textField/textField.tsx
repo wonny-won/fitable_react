@@ -2,14 +2,15 @@ import * as S from './styled'
 
 interface TextFieldProp {
     inputTitle: string;
-    style?:{}
+    style?:{};
+    onChangeHandler?:()=>void
 }
 
 export default function TextField (props:TextFieldProp){
-    const {inputTitle,style} = props
+    const {inputTitle,style,onChangeHandler} = props
     return(
         <>
-            <S.TextFieldWrapper style={style}>
+            <S.TextFieldWrapper style={style} onChange={onChangeHandler}>
                 <S.InputTitle>{inputTitle}</S.InputTitle>
                 <S.Input/>
             </S.TextFieldWrapper>
