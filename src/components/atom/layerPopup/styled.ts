@@ -9,5 +9,5 @@ export const PopupContentWrap = styled.section`
     top: center;
     left: center;
     border-radius: 8px;
-    border: 1px solid #535353
+    border: 1px solid #535353;
 `

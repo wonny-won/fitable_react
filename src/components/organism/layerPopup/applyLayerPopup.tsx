@@ -1,5 +1,5 @@
 import LayerPopup from "components/atom/layerPopup/layerPopup";
-import InputsLayerPopoup from "components/molecule/layerPopup/inputsLayerPopup/inputsLayerPopup";
+import InputsLayerPopoupContents from "components/molecule/layerPopup/inputsLayerPopup/inputsLayerPopupContents";
 
 interface PropType {
     isOpen?: boolean 
@@ -9,7 +9,7 @@ export default function ApplyLayerPopup(props:PropType){
     const { isOpen } = props
     return (
         <LayerPopup isOpen={isOpen}>
-            <InputsLayerPopoup/>
+            <InputsLayerPopoupContents/>
         </LayerPopup>
     )
 }
