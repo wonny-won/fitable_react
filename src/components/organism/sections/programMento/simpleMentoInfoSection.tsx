@@ -3,6 +3,7 @@ import * as S from './styled'
 import Save from 'components/atom/icons/save';
 import { useSaveMentoBtn } from './utils';
 import ApplyLayerPopup from 'components/organism/layerPopup/applyLayerPopup';
+import { usePopupHandler } from 'commons/hooks/usePopupHandler';
 
 interface PropType {
     data?:{
@@ -17,12 +18,13 @@ interface PropType {
 
 export default function SimpleMentoInfoSection (props:PropType) {
     const {data} = props
-    const { pageState, onClickSaveMento,onClickOpenApplyPopup } = useSaveMentoBtn()
+    const { isSaveMento, onClickSaveMento } = useSaveMentoBtn()
+    const {isOpen,onClickOpenPopupHandler} = usePopupHandler()
 
     //-- button comp props
     const applyBtnParam = {
         text: '피드백 신청하기',
-        onClickHandler: onClickOpenApplyPopup
+        onClickHandler: onClickOpenPopupHandler
     }
     const mentoSaveBtnParam = {
         isuseIcon: true,
@@ -48,7 +50,7 @@ export default function SimpleMentoInfoSection (props:PropType) {
                     <Button {...mentoSaveBtnParam}/>
                     <Button {...applyBtnParam}/>
                 </S.BtnWrap>
-                <ApplyLayerPopup isOpen={pageState.isOpenApplyPopup}/>            
+                <ApplyLayerPopup />            
             </S.SectionWrap>
     )
 }

@@ -1,4 +1,7 @@
 import { useState } from "react"
+import { isOpenLayerPopup } from "commons/utils/recoil/atom"
+import { useRecoilState } from "recoil"
+
 /********************************************************************
  * UI 관련 utils
  ********************************************************************/
@@ -28,28 +31,19 @@ export const RecommandSection:RecommandSectionType[] = [
  ********************************************************************/
 /**
  * mento 보관함 저장 핸들러 함수
- * 
- * @returns isSaveMento,onClickSaveMento
+ * @returns isSaveMento
  * isSaveMento(state: bool) : 해당멘토 찜 여부
- * onClickSaveMento(fn) : 멘토 찜 핸들러 함수
  */
 export const useSaveMentoBtn = ()=>{
-    const [pageState, setPageState] = useState({
-        isSaveMento: false,
-        isOpenApplyPopup: false
-    })
+    const [isSaveMento, setPageState] = useState(false)
 
     //-- state handler
     const onClickSaveMento = ()=>{
-        setPageState({...pageState,isSaveMento:!pageState.isSaveMento})
+        setPageState(!isSaveMento)
     }
-    const onClickOpenApplyPopup = ()=>{
-        setPageState({...pageState,isOpenApplyPopup:!pageState.isOpenApplyPopup})
-    }
-
+    
     return {
-        pageState,
+        isSaveMento,
         onClickSaveMento,
-        onClickOpenApplyPopup
     }
 }

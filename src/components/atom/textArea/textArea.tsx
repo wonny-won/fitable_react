@@ -1,17 +1,19 @@
+import { ChangeEvent } from 'react';
 import * as S from './style'
 
 interface PropType {
+    id: string;
     textAreaTilte: string;
-    onChangeHandler?: ()=>void;
+    onChangeHandler?:(e:ChangeEvent<HTMLInputElement|HTMLTextAreaElement>)=>void
 }
 
 export default function TextArea (props:PropType){
-    const {textAreaTilte,onChangeHandler} = props
+    const {id,textAreaTilte,onChangeHandler} = props
     
     return(
-        <S.TextAreaWrap onChange={onChangeHandler}>
+        <S.TextAreaWrap>
             <S.TextAreaTilte> {textAreaTilte} </S.TextAreaTilte>
-            <S.TextArea/>
+            <S.TextArea id={id} onChange={onChangeHandler}/>
         </S.TextAreaWrap>
     )
 }

@@ -62,3 +62,12 @@ export const StrongH3 = styled.span`
     font-weight: 800;
     color: #147af3;
 `
+//-----------------------------------------------------------------------------------
+// Primary (Required)
+//-----------------------------------------------------------------------------------
+export const Required = styled.span`
+    font-size: 13px;
+    font-weight: 900;
+    color: #fbaf17;
+    padding-left: 3px;
+`

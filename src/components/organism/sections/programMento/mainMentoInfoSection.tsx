@@ -39,7 +39,7 @@ export default function MainMentoInfoSection(props:DataProp){
                 <PS.NormalTxt {...{padding:'20px 0px 10px 0px'}}>{data?.feedbackFieldDesc} 입니다.</PS.NormalTxt>
                 <PS.TagWrap>
                     {
-                        data?.feedbackFieldTags.map((item)=>(<Tag data={item}/>))
+                        data?.feedbackFieldTags.map((item,idx)=>(<Tag key={idx} data={item}/>))
                     }
                 </PS.TagWrap>
 
@@ -58,12 +58,12 @@ export default function MainMentoInfoSection(props:DataProp){
                     RecommandSection.map((item:any,idx:any)=>{
                         const dataType:'recommandfor' | 'notRecomandfor' |  'benefit' =  item.data
                         return (
-                        <>
+                        <div key={idx}>
                             <PS.MiniSectionTitle>{item.title}</PS.MiniSectionTitle>
                             <PS.TxtWrap>
                                 <PS.NormalTxt {...{padding:'15px 0px 10px 10px'}}> ✐ {data?.[dataType]} </PS.NormalTxt>
                             </PS.TxtWrap>    
-                        </>
+                        </div>
                     )})
                 }
 

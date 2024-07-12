@@ -16,7 +16,7 @@ export default function (props: {rate?:number}){
     return(
         <>
             {
-                rateArr.map((i)=>(<Star {...{...startIconProps,isFill:i}}/>))
+                rateArr.map((i,idx)=>(<Star key={idx} {...{...startIconProps,isFill:i}}/>))
             }
         </>
     )

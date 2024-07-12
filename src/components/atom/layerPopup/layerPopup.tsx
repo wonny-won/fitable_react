@@ -1,12 +1,13 @@
+import { useRecoilState } from 'recoil';
 import * as S from './styled'
+import { isOpenLayerPopup } from 'commons/utils/recoil/atom';
 
 interface PropType {
     children: React.ReactNode;
-    isOpen?: boolean
 }
 
 export default function LayerPopup (props:PropType) {
-    const {isOpen} = props
+    const [isOpen,_] = useRecoilState(isOpenLayerPopup)
 
     return (
         <>

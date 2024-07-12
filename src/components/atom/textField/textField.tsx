@@ -1,18 +1,23 @@
 import * as S from './styled'
+import * as CS from '../../commonStyle'
+import { ChangeEvent } from 'react';
 
 interface TextFieldProp {
+    id:string;
     inputTitle: string;
     style?:{};
-    onChangeHandler?:()=>void
+    isRequired?:boolean;
+    onChangeHandler?:(e:ChangeEvent<HTMLInputElement|HTMLTextAreaElement>)=>void
 }
 
 export default function TextField (props:TextFieldProp){
-    const {inputTitle,style,onChangeHandler} = props
+    const {id,inputTitle,style,isRequired,onChangeHandler} = props
+
     return(
         <>
-            <S.TextFieldWrapper style={style} onChange={onChangeHandler}>
-                <S.InputTitle>{inputTitle}</S.InputTitle>
-                <S.Input/>
+            <S.TextFieldWrapper style={style}>
+                <S.InputTitle>{inputTitle}{isRequired && <CS.Required>*</CS.Required>}</S.InputTitle>
+                <S.Input id={id} onChange={onChangeHandler}/>
             </S.TextFieldWrapper>
         </>
     )
