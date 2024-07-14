@@ -11,8 +11,8 @@ import InputsContents from "./inputsContents";
         <section>
             <InputsContents isConfirm={isConfirm}/>
             <S.BtnWrap>
-                <Button text='취소하기' onClickHandler={onClickConfrimBtn} />
-                <Button text='신청하기' onClickHandler={onClickOpenPopupHandler}/>
+                <Button text='취소하기' onClickHandler={onClickOpenPopupHandler} />
+                <Button text='신청하기' onClickHandler={onClickConfrimBtn}/>
             </S.BtnWrap>
         </section>
     )

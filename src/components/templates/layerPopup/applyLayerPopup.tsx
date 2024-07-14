@@ -4,7 +4,7 @@ import PopupContents from "components/organism/layerPopup/applyPopup/popupConten
 export default function ApplyLayerPopup(){
     return (
         <LayerPopup>
-            <h1>프로그램 신청</h1>
+            <h1>피드백 프로그램 신청</h1>
             <PopupContents/>
         </LayerPopup>
     )
