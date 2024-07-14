@@ -1,6 +1,6 @@
 import * as S from './styled'
 import * as CS from '../../commonStyle'
-import { ChangeEvent } from 'react';
+import { ChangeEvent, memo } from 'react';
 
 interface TextFieldProp {
     id:string;
@@ -10,7 +10,7 @@ interface TextFieldProp {
     onChangeHandler?:(e:ChangeEvent<HTMLInputElement|HTMLTextAreaElement>)=>void
 }
 
-export default function TextField (props:TextFieldProp){
+ const TextField = (props:TextFieldProp)=>{
     const {id,inputTitle,style,isRequired,onChangeHandler} = props
 
     return(
@@ -22,3 +22,5 @@ export default function TextField (props:TextFieldProp){
         </>
     )
 }
+
+export default memo(TextField)

@@ -2,7 +2,7 @@ import Button from 'components/atom/button/button';
 import * as S from './styled'
 import Save from 'components/atom/icons/save';
 import { useSaveMentoBtn } from './utils';
-import ApplyLayerPopup from 'components/organism/layerPopup/applyLayerPopup';
+import ApplyLayerPopup from 'components/templates/layerPopup/applyLayerPopup';
 import { usePopupHandler } from 'commons/hooks/usePopupHandler';
 
 interface PropType {

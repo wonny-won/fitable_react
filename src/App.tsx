@@ -1,5 +1,5 @@
 import RoutesCompoents from "Routes";
-import LayoutPage from "components/templates/layoutPage";
+import LayoutPage from "components/templates/layout/layoutPage";
 import {
   RecoilRoot,
   atom,

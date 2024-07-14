@@ -1,4 +1,4 @@
-import NavBar from "../molecule/nav/navBar";
+import NavBar from "../../molecule/nav/navBar";
 
 type PageComp = {
     children : React.ReactNode

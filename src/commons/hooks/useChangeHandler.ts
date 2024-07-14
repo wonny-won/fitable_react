@@ -1,6 +1,7 @@
-import { ChangeEvent, useState } from "react"
+import { ChangeEvent, useState,useCallback } from "react" 
 
 // 일반화 성공 함수 - 프로젝트 어느 input / textArea 에도 적용이 가능. 
+
 
 /** 
  * input change 커스텀 훅스 핸들러 
@@ -14,13 +15,14 @@ import { ChangeEvent, useState } from "react"
  *  1. 각 input / textArea 컴포넌트에 porps로 id 값을 내려줘야 한다.
  *  2. 각 id 값은 유니크해야 하며 스트링 값이다.
  */
-export const useCustomChangeHandler = ()=>{
-    const [inputs,setInpus] = useState({})
+export const useCustomChangeHandler = (param:any)=>{
+    const initState = param
+    const [inputs,setInpus] = useState(initState)
 
-    const onChangeHandler = (e:ChangeEvent<HTMLInputElement|HTMLTextAreaElement>)=>{
-        const textFieldsId = e.target.id 
-        setInpus({...inputs, [textFieldsId] :e.currentTarget.value})
-    }
+    const onChangeHandler = useCallback((e:ChangeEvent<HTMLInputElement|HTMLTextAreaElement>)=>{
+        const {id,value} = e.currentTarget
+        setInpus((prev:any)=>({...prev,[id]:value}))
+    },[])
 
     return{
         inputs,
