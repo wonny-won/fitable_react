@@ -20,7 +20,7 @@ import { creatProgramApplication } from "commons/appServe/baseApi";
     const { inputs,onChangeHandler } = useCustomChangeHandler(initInnputsParam)
     if(isConfirm){
         const apiParam = {
-            collectionName:'apply_program',
+            collectionName:'apply-program',
             req:inputs
         }
         creatProgramApplication(apiParam)

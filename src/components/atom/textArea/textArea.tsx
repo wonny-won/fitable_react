@@ -1,7 +1,5 @@
 import { ChangeEvent, memo } from 'react';
 import * as S from './style'
-
-type Inputs = {[id:string]:string}
 interface PropType {
     id: string;
     textAreaTilte: string;
