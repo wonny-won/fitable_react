@@ -3,6 +3,8 @@ import NickNameFeild from '../../molecule/joinus/nicknameField'
 import NameField from '../../molecule/joinus/nameField'
 import PhoneField from '../../molecule/joinus/phoneField'
 import EmailField from '../../molecule/joinus/emailField'
+import TextField from "components/atom/textField/textField";
+import { InputTitle } from "components/atom/textField/styled";
 
 export default function JoinUsTextFiled (){
     const initJoinInputParam = {
@@ -10,6 +12,12 @@ export default function JoinUsTextFiled (){
         name:'',
         phone:'',
         email:''
+    }
+    const paprm = {
+        id:'test',
+        inputTitle:'test',
+        style:{width:'250px'},
+
     }
     const {inputs,onChangeHandler} = useCustomChangeHandler(initJoinInputParam)
 
@@ -21,7 +29,7 @@ export default function JoinUsTextFiled (){
             <NameField onChangeHandler={onChangeHandler}/>
             <PhoneField onChangeHandler={onChangeHandler}/>
             <EmailField onChangeHandler={onChangeHandler}/>
-            {/* <TextField id='name' inputTitle="이름" {...textFildParam}/> */}
+            <TextField {...paprm} onChangeHandler={onChangeHandler}/>
         </>
     )
 }
