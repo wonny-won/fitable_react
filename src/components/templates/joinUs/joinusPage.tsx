@@ -1,15 +1,20 @@
-import JoinUsButtonField from "components/organism/joinUs/buttonField";
-import JoinUsTextFiled from "components/organism/joinUs/textField";
 import * as S from './styled'
-import JoinUsPageBanner from "components/organism/joinUs/banner";
+import SignInUpBanner from "components/organism/SignInUpBanner/banner";
 
-export default function JoinUsPage (){
+interface PropType {
+    children?: React.ReactNode
+}
+
+export default function JoinUsPage (props:PropType){
+    const txtParam = {
+        mainTxt:'반가워요',
+        subTxt:'함께하게 되어',
+    }
     return(
         <S.JoinUsSection>
-            <JoinUsPageBanner/>
+            <SignInUpBanner {...txtParam}/>
             <div>
-                <JoinUsTextFiled/>
-                <JoinUsButtonField/>
+                {props?.children}
             </div>
         </S.JoinUsSection>
     )

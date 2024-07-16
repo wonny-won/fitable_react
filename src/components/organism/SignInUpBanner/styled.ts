@@ -33,6 +33,7 @@ const animation = styled.p`
     overflow: hidden;
     width: 0%;
     animation: ${typing} 2s steps(30, end) forwards;
+    /* animation: ${typing} 2s ease-out forwards; */
 `
 export const ValueOfTogather = styled(animation)`
     font-size: 60px;
