@@ -1,7 +1,7 @@
-import JoinUsTextFiled from 'components/organism/JoinUs/textField';
+import JoinUsTextFiled from 'components/organism/JoinUs/contentSection';
 import * as S from './styled'
 import SignInUpBanner from "components/organism/SignInUpBanner/banner";
-import JoinUsButtonField from 'components/organism/JoinUs/buttonField';
+import JoinUsButtonField from 'components/organism/JoinUs/buttonSection';
 
 interface PropType {
     children?: React.ReactNode
