@@ -1,11 +1,22 @@
+import { usePopupHandler } from "commons/hooks/usePopupHandler";
 import LayerPopup from "components/atom/layerPopup/layerPopup";
-import PopupContents from "components/organism/layerPopup/applyPopup/popupContents";
+import ApplyBtnSection from "components/organism/layerPopup/applyPopup/applyBtnSection";
+import ApplyContentsSection from "components/organism/layerPopup/applyPopup/applyContentSection";
+import { memo } from "react";
 
-export default function ApplyLayerPopup(){
+function ApplyLayerPopup(){
+    const {isConfirm,onClickOpenPopupHandler,onClickConfrimBtn} = usePopupHandler()
+    const btnParam = {
+        onClickOpenPopupHandler,
+        onClickConfrimBtn
+    }
+
     return (
         <LayerPopup>
             <h1>피드백 프로그램 신청</h1>
-            <PopupContents/>
+            <ApplyContentsSection isConfirm={isConfirm}/>
+            <ApplyBtnSection {...btnParam}/>
         </LayerPopup>
     )
 }
+export default memo(ApplyLayerPopup)

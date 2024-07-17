@@ -20,11 +20,10 @@ export const fieldParam:any = {
         inputTitle: '결과 수신용 이메일',
         style:{},
         isRequired:true,
-
     },
     feedbackReq:{
         id: 'feedbackReq',
-        textAreaTilte: '피드백 요청사항',
+        textAreaTitle: '피드백 요청사항',
         style:{},
         isRequired:false,
     }

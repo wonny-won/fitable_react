@@ -1,14 +1,13 @@
 import { useCustomChangeHandler } from "commons/hooks/useChangeHandler";
 import { memo } from "react";
-import ApplicantTextField from '../../../molecule/layerPopup/applyPopupMolecule/applicant'
-import PhoneTextField from '../../../molecule/layerPopup/applyPopupMolecule/phone'
-import EmailTextField from '../../../molecule/layerPopup/applyPopupMolecule/email'
-import TextAreaField from '../../../molecule/layerPopup/applyPopupMolecule/feedBackReq'
 import * as S from './styled'
 import { creatProgramApplication } from "commons/appServe/baseApi";
+import TextField from "components/atom/textField/textField";
+import { fieldParam } from "./utils";
+import TextArea from "components/atom/textArea/textArea";
 
 
- function InputContents (props:{isConfirm:boolean}){
+ function ApplyContentsSection (props:{isConfirm:boolean}){
     const { isConfirm } = props
     const initInnputsParam = {
         porgram:'feedback',
@@ -23,19 +22,19 @@ import { creatProgramApplication } from "commons/appServe/baseApi";
             collectionName:'apply-program',
             req:inputs
         }
-        creatProgramApplication(apiParam)
+        // creatProgramApplication(apiParam)
     }
     
     return (
         <section>
             <S.ApplicantInfoWrap>
-                <ApplicantTextField onChangeHandler={onChangeHandler}/>
-                <PhoneTextField onChangeHandler={onChangeHandler}/>
+                <TextField {...fieldParam['applicant']} onChangeHandler={onChangeHandler}/>
+                <TextField {...fieldParam['phone']} onChangeHandler={onChangeHandler}/>
             </S.ApplicantInfoWrap>
-                <EmailTextField onChangeHandler={onChangeHandler}/>
+                <TextField {...fieldParam['email']} onChangeHandler={onChangeHandler}/>
                 <input type='file'/>
-                <TextAreaField onChangeHandler={onChangeHandler}/>
+                <TextArea {...fieldParam['feedbackReq']} onChangeHandler={onChangeHandler}/>
         </section>
     )
 }
-export default memo(InputContents)
+export default memo(ApplyContentsSection)
