@@ -1,10 +1,6 @@
 import { useCustomChangeHandler } from "commons/hooks/useChangeHandler";
-import NickNameFeild from '../../molecule/joinus/nicknameField'
-import NameField from '../../molecule/joinus/nameField'
-import PhoneField from '../../molecule/joinus/phoneField'
-import EmailField from '../../molecule/joinus/emailField'
 import TextField from "components/atom/textField/textField";
-import { InputTitle } from "components/atom/textField/styled";
+import {textfieldParam} from './uils'
 
 export default function JoinUsTextFiled (){
     const initJoinInputParam = {
@@ -13,23 +9,15 @@ export default function JoinUsTextFiled (){
         phone:'',
         email:''
     }
-    const paprm = {
-        id:'test',
-        inputTitle:'test',
-        style:{width:'250px'},
-
-    }
     const {inputs,onChangeHandler} = useCustomChangeHandler(initJoinInputParam)
-
     console.log(inputs)
 
     return(
         <>   
-            <NickNameFeild onChangeHandler={onChangeHandler}/>
-            <NameField onChangeHandler={onChangeHandler}/>
-            <PhoneField onChangeHandler={onChangeHandler}/>
-            <EmailField onChangeHandler={onChangeHandler}/>
-            <TextField {...paprm} onChangeHandler={onChangeHandler}/>
+            <TextField {...textfieldParam['nickname']} onChangeHandler={onChangeHandler}/>
+            <TextField {...textfieldParam['name']} onChangeHandler={onChangeHandler}/>
+            <TextField {...textfieldParam['phone']} onChangeHandler={onChangeHandler}/>
+            <TextField {...textfieldParam['email']} onChangeHandler={onChangeHandler}/>
         </>
     )
 }

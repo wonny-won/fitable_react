@@ -1,13 +1,6 @@
 import { keyframes } from "@emotion/react";
 import styled from "@emotion/styled";
 
-export const TextFeildWrap = styled.div`
-
-`
-
-export const BtnWrap = styled.div`
-    display: flex;
-`
 
 const typing = keyframes`
  from{

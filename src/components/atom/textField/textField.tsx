@@ -2,6 +2,7 @@ import * as S from './styled'
 import * as CS from '../../commonStyle'
 import { ChangeEvent, memo } from 'react';
 import InputFeild from './inputFiled'
+import InputTitle from './inputTitle';
 
 interface TextFieldProp {
     id:string;
@@ -16,7 +17,7 @@ function TextField (props:TextFieldProp){
     return(
         <>
             <S.TextFieldWrapper style={style}>
-                <S.InputTitle>{inputTitle}{isRequired && <CS.Required>*</CS.Required>}</S.InputTitle>
+                <InputTitle inputTitle={inputTitle} isRequired={isRequired}/>
                 <InputFeild id={id} onChangeHandler={onChangeHandler}/>
             </S.TextFieldWrapper>
         </>

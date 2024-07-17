@@ -1,5 +1,7 @@
+import JoinUsTextFiled from 'components/organism/JoinUs/textField';
 import * as S from './styled'
 import SignInUpBanner from "components/organism/SignInUpBanner/banner";
+import JoinUsButtonField from 'components/organism/JoinUs/buttonField';
 
 interface PropType {
     children?: React.ReactNode
@@ -14,7 +16,8 @@ export default function JoinUsPage (props:PropType){
         <S.JoinUsSection>
             <SignInUpBanner {...txtParam}/>
             <div>
-                {props?.children}
+                <JoinUsTextFiled/>
+                <JoinUsButtonField/>
             </div>
         </S.JoinUsSection>
     )

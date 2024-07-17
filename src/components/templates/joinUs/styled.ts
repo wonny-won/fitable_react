@@ -9,4 +9,3 @@ export const JoinUsSection = styled.section`
     background-color: #1a1814;
     margin-top: 5px;
 `
-
