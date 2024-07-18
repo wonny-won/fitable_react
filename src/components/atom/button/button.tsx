@@ -1,4 +1,3 @@
-import { memo } from 'react';
 import * as S from './styled'
 
 interface ButtonProp {
@@ -10,7 +9,7 @@ interface ButtonProp {
     onClickHandler?:()=>void;
 }
 
-const Button = (props:ButtonProp)=>{
+export default function Button (props:ButtonProp){
     const {text,style,isuseIcon,iconComp,onClickHandler} = props
     
     return(
@@ -19,5 +18,3 @@ const Button = (props:ButtonProp)=>{
         </S.Button>
     )
 }
-
-export default memo(Button)

@@ -1,7 +1,7 @@
 import styled from '@emotion/styled'
-import BarWidget from '../../infoWidget/barwidget'
-import PieWidget from '../../infoWidget/PieWidget'
-import * as CS from '../../../commonStyle'
+import BarWidget from '../infoWidget/barwidget'
+import PieWidget from '../infoWidget/PieWidget'
+import * as CS from '../../commonStyle'
 
 export default function HomeCahrtSection(){
     const styleParam = {

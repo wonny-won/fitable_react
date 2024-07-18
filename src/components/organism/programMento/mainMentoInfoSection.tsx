@@ -1,5 +1,5 @@
 import Tag from 'components/atom/tag/tag';
-import * as S from '../../../commonStyle'
+import * as S from '../../commonStyle'
 import * as PS from './styled'
 import ReviewCard from 'components/molecule/Review/reviewCard';
 import { RecommandSection } from './utils';

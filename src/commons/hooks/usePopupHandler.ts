@@ -1,4 +1,5 @@
 import { isOpenLayerPopup,isOnClickConfirm } from "commons/utils/recoil/atom"
+import { useCallback } from "react"
 import { useRecoilState } from "recoil"
 
 /**
@@ -24,7 +25,6 @@ export const usePopupHandler = ()=>{
     //-- onClick confirm btn
     const onClickConfrimBtn = ()=>{
         setIsConfirm(!isConfirm)
-        
     }
 
     return {

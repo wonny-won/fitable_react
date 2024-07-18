@@ -1,5 +1,5 @@
 import ScrollDown from 'components/atom/icons/scrollDown'
-import * as CS from '../../../commonStyle'
+import * as CS from '../../commonStyle'
 import styled from '@emotion/styled'
 
 export default function HomeIntroSection(){

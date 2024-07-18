@@ -1,5 +1,5 @@
 import Card from 'components/molecule/card/Card'
-import * as CS from '../../../commonStyle'
+import * as CS from '../../commonStyle'
 import * as AL from './styled'
 import { mentoLst } from 'commons/utils/mockData'
 import { H1Style, SectionStyle, logoImgArr, useProgramChangeHandler, titleArr } from './utils'

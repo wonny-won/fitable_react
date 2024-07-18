@@ -1,10 +1,10 @@
 import { useParams } from "react-router-dom"
 import { mentoInfo } from "commons/utils/mockData"
-import SimpleMentoInfoSection from "components/organism/sections/programMento/simpleMentoInfoSection"
-import MainMentoInfoSection from "components/organism/sections/programMento/mainMentoInfoSection"
-import TextField from "components/atom/textField/textField"
+import SimpleMentoInfoSection from "components/organism/programMento/simpleMentoInfoSection"
+import MainMentoInfoSection from "components/organism/programMento/mainMentoInfoSection"
+import { memo } from "react"
 
-export default function ProgramMento(){
+function ProgramMento(){
     // 파라미터에서 id값을 끌어와백엔드에 날리기
     const idParam = useParams().id?.split(':')[1]
     const data = idParam && mentoInfo[idParam]
@@ -16,3 +16,4 @@ export default function ProgramMento(){
         </>
     )
 }
+export default memo(ProgramMento)

@@ -1,7 +1,9 @@
-import FeedbackSection from "components/organism/sections/feedbackProgram/feedbackSection";
+import FeedbackSection from "components/organism/feedbackProgram/feedbackSection";
+import { memo } from "react";
 
-export default function FeedBackProgramApply (){
+function FeedBackProgramApply (){
     return(
         <FeedbackSection/>
     )
 }
+export default memo(FeedBackProgramApply)

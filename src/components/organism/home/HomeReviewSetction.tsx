@@ -1,4 +1,4 @@
-import * as CS from '../../../commonStyle'
+import * as CS from '../../commonStyle'
 
 export default function HomeReviewSection (){
     const styleParam = {

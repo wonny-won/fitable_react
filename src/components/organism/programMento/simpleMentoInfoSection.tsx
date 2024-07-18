@@ -4,6 +4,7 @@ import Save from 'components/atom/icons/save';
 import { useSaveMentoBtn } from './utils';
 import ApplyLayerPopup from 'components/templates/layerPopup/applyLayerPopup';
 import { usePopupHandler } from 'commons/hooks/usePopupHandler';
+import { memo } from 'react';
 
 interface PropType {
     data?:{
@@ -16,7 +17,7 @@ interface PropType {
     }
 }
 
-export default function SimpleMentoInfoSection (props:PropType) {
+function SimpleMentoInfoSection (props:PropType) {
     const {data} = props
     const { isSaveMento, onClickSaveMento } = useSaveMentoBtn()
     const {isOpen,onClickOpenPopupHandler} = usePopupHandler()
@@ -54,3 +55,4 @@ export default function SimpleMentoInfoSection (props:PropType) {
             </S.SectionWrap>
     )
 }
+export default memo(SimpleMentoInfoSection)

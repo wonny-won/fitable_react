@@ -22,7 +22,7 @@ import TextArea from "components/atom/textArea/textArea";
             collectionName:'apply-program',
             req:inputs
         }
-        // creatProgramApplication(apiParam)
+        creatProgramApplication(apiParam)
     }
     
     return (
